@@ -9,7 +9,7 @@ usgs_base_url = 'http://waterservices.usgs.gov/nwis/iv/?site=14123500&format=jso
 with open('gauge_data.csv', 'w') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(['datetime','husum_ft','usgs_ft','usgs_cfs'])
-    for post in facebook_scraper.get_posts('whitesalmonriverathusum', pages=100):
+    for post in facebook_scraper.get_posts('whitesalmonriverathusum', pages=1000):
         # Find the five characters before various represnetation of feet
         # (Note that this will only find the first instance in the post)
         text_before_feet = post['text']
