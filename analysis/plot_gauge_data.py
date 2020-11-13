@@ -66,5 +66,9 @@ plt.show()
 joblib.dump(poly_model_cfs, 'poly_model_cfs.pkl') 
 print(linear_model_height.coef_)
 print(linear_model_height.intercept_)
+print(poly_model_height.steps[1][1].coef_)
+print(poly_model_height.steps[1][1].intercept_)
+
+
 
 
