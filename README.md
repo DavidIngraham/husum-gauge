@@ -42,7 +42,15 @@ The historical readings show a useful relationship between the gauges. They also
 
 The existing script fits and plots the same dataset. It does not report held-out prediction errors or confidence intervals, so a curve that follows these points more closely is not yet evidence that it will predict new readings better. Cubic extrapolation beyond the observed range is also a different question from fitting the measurements we have.
 
-If I revisit the project, I would start by checking the timestamp matching, reviewing unusual or repeated observations, and testing predictions on observations from a later period. That would help answer the practical question: how much uncertainty should accompany an estimated Husum reading?
+There are more variables behind this relationship than either gauge captures on its own. Aquifer levels and groundwater contributions, along with where and when rain falls throughout the drainage, can affect how the two locations respond. The channel cross sections also differ, so a change in flow need not produce the same change in height at each gauge. These are factors I want to investigate; the current regression does not separate their effects.
+
+## Next steps: a fuller picture of the basin
+
+The hydrology of Mount Adams and the White Salmon basin is interesting to me, and I want to explore a model that uses historical weather radar data to tell a more complete story. Looking at rainfall across the drainage, rather than only comparing two gauge readings, could help explain when and why their relationship changes.
+
+I would start by pairing the gauge observations with radar-derived precipitation over different parts of the basin and over preceding hours and days. That would let me explore how rainfall location, timing and antecedent conditions relate to the readings. Radar would add information about precipitation; it would not directly measure aquifer levels, so groundwater storage and response would still need additional data or modeling.
+
+Alongside that work, I want to check the timestamp matching, review unusual or repeated observations, and test predictions on a later period. The goal is to understand more of the basin's behavior and quantify the uncertainty in an estimated Husum reading.
 
 This page describes a historical analysis. It does not display current river levels.
 
